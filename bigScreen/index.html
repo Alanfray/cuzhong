@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    <link rel="stylesheet" type="text/css" href="./css/north.css">
+    <link rel="stylesheet" type="text/css" href="./css/south.css">
+    <link rel="stylesheet" type="text/css" href="./css/west.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
+    <script type="text/javascript" src="./js/rem.js"></script>
+    <script type="text/javascript" src="./js/echarts.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-2.2.3.min.js"></script>
+</head>
+
+<body>
+    <div class="slide" id="slide">
+        <div id="outer" class="outer">
+            <ul id="inner" class="inner">
+                    
+                <li id="index">
+                    <div class="container">
+                        <div class="bg-index">
+                            <div class="head-line">
+                                <h3>
+                                    <span>重庆市脑卒中急救地图</span>
+                                    <span class="title-date">2019年08月01日</span>
+                                </h3>
+                            </div>
+                            <div class="content">
+                                <div class="wrapper">
+                                    <div class="con-top">
+                                        <div class="con-top-left">
+                                            <div class="upper">
+                                                <div class="upper-cont">
+                                                    <h5>溶栓取栓推荐单位</h5>
+                                                    <p>渝东北区：14家溶栓取栓推荐单位</p>
+                                                    <p>渝东南区：7家溶栓取栓推荐单位</p>
+                                                    <p>渝西区：16家溶栓取栓推荐单位</p>
+                                                    <p>主城区：28家溶栓取栓推荐单位</p>
+                                                </div>
+                                            </div>
+                                            <div class="lower">
+                                                <div id="main" style="width:500px;height: 320px"></div>
+                                            </div>
+                                        </div>
+                                        <div class="con-top-right">
+                                            <div class="mapmsgbg">
+                                                <div class="flagone">
+                                                    <p><i></i></p>
+                                                    <span>渝东北区</span>
+                                                </div>
+                                                <div class="flagtwo">
+                                                    <p><i></i></p>
+                                                    <span>渝东南区</span>
+                                                </div>
+                                                <div class="flagthree">
+                                                    <p><i></i></p>
+                                                    <span>主城区</span>
+                                                </div>
+                                                <div class="flagfour">
+                                                    <p><i></i></p>
+                                                    <span>渝西区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="con-bottom">
+                                        <h6>武汉明德生物科技股份有限公司版权所有</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="home">
+                    <div class="container">
+                        <div class="aninode bg-index">
+                            <div class="head-line">
+                                <h3>
+                                    <span>主城区溶栓取栓推荐单位</span>
+                                    <span class="title-date">2019年08月01日</span>
+                                </h3>
+                            </div>
+                            <div class="content">
+                                <div class="wrapper">
+                                    <div class="con-top">
+                                        <div class="con-top-left">
+                                            <div class="upper">
+                                                <div class="main-six leftIn ldelay200">
+                                                    <p>⑥ 北碚县</p>
+                                                    <p>-重庆市第九人民医院</p>
+                                                    <p>-重庆市北碚区中医院</p>
+                                                </div>
+                                                <div class="main-seven leftIn ldelay400">
+                                                    <p>⑦ 江北区</p>
+                                                    <p>-重庆市中医院南桥寺院区</p>
+                                                    <p>-重庆三博长安医院</p>
+                                                    <p>-重庆三博江陵医院</p>
+                                                </div>
+                                                <div class="main-eight leftIn ldelay600">
+                                                    <p>⑧ 沙坪坝区</p>
+                                                    <p>-陆军军医大学附属西南医院</p>
+                                                    <p>-陆军军医大学附属新桥医院</p>
+                                                    <p>-重庆市沙坪坝区人民医院</p>
+                                                    <p>-重庆东华医院</p>
+                                                    <p>-重庆嘉陵医院</p>
+                                                    <p>-重庆市沙坪坝区陈家桥医院</p>
+                                                    <p>-重庆医科大学附属大学城医院</p>
+                                                </div>
+                                            </div>
+                                            <div class="lower">
+                                                <div class="map-bg">
+                                                    <img class="imgjump blink" src="./image/home/img_map_cq1@2x.png">
+                                                    <span class="main-title-text ">重庆市主城区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 地图中间 做动画 -->
+                                        <div class="con-top-center">
+                                            <div class="mapmsgbg">
+                                                <div class="flagone">
+                                                    <p><i></i></p>
+                                                    <span>重庆市</span>
+                                                </div>
+                                                <div class="moveflag-one rightIn">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>渝北区</span>
+                                                </div>
+                                                <div class="moveflag-two rightIn rdelay200">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>渝中区</span>
+                                                </div>
+                                                <div class="moveflag-three rightIn rdelay400">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>南岸区</span>
+                                                </div>
+                                                <div class="moveflag-nine rightIn rdelay600">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>巴南区</span>
+                                                </div>
+                                                <div class="moveflag-eight rightIn rdelay800">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>大渡口区</span>
+                                                </div>
+
+                                                <div class="moveflag-five leftIn ldelay200">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>北碚县</span>
+                                                </div>
+                                                <div class="moveflag-six leftIn ldelay400">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>江北区</span>
+                                                </div>
+                                                <div class="moveflag-seven leftIn ldelay600">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>沙坪坝区</span>
+                                                </div>
+                                                <div class="moveflag-four rightIn ldelay800">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>九龙坡区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="con-top-right">
+                                            <div class="right-bg">
+                                                <div class="main-one rightIn">
+                                                    <p>① 渝北区</p>
+                                                    <p>-重庆医科大学附属第三医院</p>
+                                                    <p>-重庆市渝北区人民医院</p>
+                                                </div>
+                                                <div class="main-two rightIn rdelay200">
+                                                    <p>② 渝中区</p>
+                                                    <p>-重庆市急救医疗中心</p>
+                                                    <p>-重庆市人民医院中山院区</p>
+                                                    <p>-重庆市人民医院三院院区</p>
+                                                    <p>-重庆医科大学附属第二医院渝中院区</p>
+                                                    <p>-陆军军医大学附属大坪医院</p>
+                                                    <p>-重庆医科大学附属第一医院</p>
+                                                    <p>-重庆市中医院道门口院区</p>
+                                                </div>
+                                                <div class="main-three rightIn rdelay400">
+                                                    <p>③ 南岸区</p>
+                                                    <p>-重庆医科大学附属第二医院江南院区</p>
+                                                    <p>-重庆市第五人民医院</p>
+                                                    <p>-重庆市武警医院 -重庆市东南医院</p>
+                                                </div>
+                                                <div class="main-four rightIn rdelay600">
+                                                    <p>④ 巴南区</p>
+                                                    <p>-重庆市第七人民医院</p>
+                                                    <p>-重庆市巴南区人民医院</p>
+                                                    <p>-重庆市巴南区第二人民医院</p>
+                                                </div>
+                                                <div class="main-five rightIn rdelay800">
+                                                    <p>⑤ 大渡口</p>
+                                                    <p>-重钢总医院</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="con-bottom">
+                                        <h6>武汉明德生物科技股份有限公司版权所有</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="north">
+                    <div class="container">
+                        <div class="aninode bg-index">
+                            <div class="head-line">
+                                <h3>
+                                    <span>渝东北区溶栓取栓推荐单位</span>
+                                    <span class="title-date">2019年08月01日</span>
+                                </h3>
+                            </div>
+                            <div class="content">
+                                <div class="wrapper">
+                                    <div class="con-top">
+                                        <div class="con-top-left">
+                                            <div class="upper">
+                                                <div class="main-six leftIn ldelay200">
+                                                    <p>⑧ 开州</p>
+                                                    <p>-重庆市开州区人民医院</p>
+                                                    <p>-重庆市开州区中医院</p>
+                                                </div>
+                                                <div class="main-seven leftIn ldelay400">
+                                                    <p>⑨ 梁平</p>
+                                                    <p>-重庆市梁平区人民医院</p>
+                                                </div>
+                                                <div class="main-eight leftIn ldelay600">
+                                                    <p>⑩ 垫江</p>
+                                                    <p>-重庆市垫江县人民医院</p>
+                                                    <p>-重庆市垫江县中医院</p>
+                                                </div>
+                                                <div class="main-eight leftIn ldelay800">
+                                                    <p>⑪ 长寿</p>
+                                                    <p>-重庆市长寿区人民医院 </p>
+                                                </div>
+                                            </div>
+                                            <div class="lower">
+                                                <div class="map-bg">
+                                                    <img class="imgjump blink"
+                                                        src="./image/northeast/img_map_ydb1@2x.png">
+                                                    <span class="main-title-text ">
+                                                        重庆市</br>
+                                                        渝东北区
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 地图中间 做动画 -->
+                                        <div class="con-top-center">
+                                            <div class="mapmsgbg">
+                                                <div class="moveflag-one rightIn">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>巫溪县</span>
+                                                </div>
+                                                <div class="moveflag-two rightIn rdelay200">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>巫山县</span>
+                                                </div>
+                                                <div class="moveflag-three rightIn rdelay400">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>奉节县</span>
+                                                </div>
+                                                <div class="moveflag-four rightIn rdelay600">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>云阳县</span>
+                                                </div>
+                                                <div class="moveflag-five rightIn rdelay800">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>万州区</span>
+                                                </div>
+                                                <div class="moveflag-six rightIn rdelay1000">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span class="absPos">忠县</span>
+                                                </div>
+                                                <div class="moveflag-seven rightIn rdelay1200">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span class="absPos">丰都</span>
+                                                </div>
+                                                <div class="moveflag-eight leftIn ldelay200">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>开州区</span>
+                                                </div>
+                                                <div class="moveflag-nine leftIn ldelay400">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>梁平县</span>
+                                                </div>
+                                                <div class="moveflag-ten leftIn ldelay600">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>垫江县</span>
+                                                </div>
+                                                <div class="moveflag-eleven leftIn ldelay800">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>长寿县</span>
+                                                </div>
+                                                <div class="moveflag-twelve leftIn ldelay1000">
+                                                    <img src="./image/index/icon_light@2x.png" class="" />
+                                                    <span>城口县</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="con-top-right">
+                                            <div class="right-bg">
+                                                <div class="main-one rightIn">
+                                                    <p>① 巫溪</p>
+                                                    <p>-重庆市巫溪县人民医院</p>
+                                                </div>
+                                                <div class="main-two rightIn rdelay200">
+                                                    <p>② 巫山</p>
+                                                    <p>-重庆市巫山县人民医院</p>
+                                                </div>
+                                                <div class="main-three rightIn rdelay400">
+                                                    <p>③ 奉节</p>
+                                                    <p>-重庆市奉节县人民医院</p>
+                                                </div>
+                                                <div class="main-four rightIn rdelay600">
+                                                    <p>④ 云阳</p>
+                                                    <p>-重庆市云阳县人民医院</p>
+                                                </div>
+                                                <div class="main-five rightIn rdelay800">
+                                                    <p>⑤ 万州</p>
+                                                    <p>-重庆三峡中心医院(万州)</p>
+                                                    <p>-重庆市万州区人民医院</p>
+                                                </div>
+                                                <div class="main-five rightIn rdelay1000">
+                                                    <p>⑥ 忠县</p>
+                                                    <p>-重庆市忠县人民医院</p>
+                                                </div>
+                                                <div class="main-five rightIn rdelay1200">
+                                                    <p>⑦ 丰都</p>
+                                                    <p>-重庆市丰都县人民医院</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="con-bottom">
+                                        <h6>武汉明德生物科技股份有限公司版权所有</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="south">
+                    <div class="container">
+                        <div class="aninode bg-index">
+                            <div class="head-line">
+                                <h3>
+                                    <span>渝东南区溶栓取栓推荐单位</span>
+                                    <span class="title-date">2019年08月01日</span>
+                                </h3>
+                            </div>
+                            <div class="content">
+                                <div class="wrapper">
+                                    <div class="con-top">
+                                        <div class="con-top-left">
+                                            <div class="upper">
+                                                <div class="main-six leftIn ldelay400">
+                                                    <p>⑤ 涪陵</p>
+                                                    <p>-重庆市涪陵中心医院</p>
+                                                    <p>-重庆市涪陵区中医院</p>
+                                                </div>
+                                                <div class="main-seven leftIn ldelay600">
+                                                    <p>⑥ 武隆</p>
+                                                    <p>-重庆市武隆区人民医院</p>
+                                                </div>
+                                            </div>
+                                            <div class="lower">
+                                                <div class="map-bg">
+                                                    <img class="imgjump blink"
+                                                        src="./image/southeast/img_map_ydn1@2x.png">
+                                                    <span class="main-title-text ">重庆市<br />渝东南区</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 地图中间 做动画 -->
+                                        <div class="con-top-center">
+                                            <div class="mapmsgbg">
+                                                <div class="moveflag-one rightIn">
+                                                    <img src="./image/index/icon_light@2x.png" />
+                                                    <span>石柱土家族<br />自治县</span>
+                                                </div>
+                                                <div class="moveflag-two rightIn rdelay200">
+                                                    <img src="./image/index/icon_light@2x.png" />
+                                                    <span>黔江区</span>
+                                                </div>
+                                                <div class="moveflag-three rightIn rdelay400">
+                                                    <img src="./image/index/icon_light@2x.png" />
+                                                    <span>秀山土家族苗族<br />自治县</span>
+                                                </div>
+                                                <div class="moveflag-four rightIn rdelay600">
+                                                    <img src="./image/index/icon_light@2x.png" />
+                                                    <span>彭水苗族土家族<br />自治县</span>
+                                                </div>
+                                                <div class="moveflag-five rightIn rdelay800">
+                                                    <img src="./image/index/icon_light@2x.png" />
+                                                    <span>酉阳土家族苗族<br />自治县</span>
+                                                </div>
+                                                <div class="moveflag-six leftIn ldelay400">
+                                                    <img src="./image/index/icon_light@2x.png" />
+                                                    <span>涪陵县</span>
+                                                </div>
+                                                <div class="moveflag-seven leftIn ldelay600">
+                                                    <img src="./image/index/icon_light@2x.png" />
+                                                    <span>武隆县</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="con-top-right">
+                                            <div class="right-bg">
+                                                <div class="main-one rightIn">
+                                                    <p>① 石柱</p>
+                                                    <p>-重庆市石柱土家族自治县人民医院</p>
+                                                </div>
+                                                <div class="main-two rightIn rdelay200">
+                                                    <p>② 黔江</p>
+                                                    <p>-重庆市黔江区中心医院</p>
+                                                </div>
+                                                <div class="main-three rightIn rdelay400">
+                                                    <p>③ 秀山</p>
+                                                    <p>-重庆市秀山土家族苗族自治县人民医院</p>
+                                                </div>
+                                                <div class="main-four rightIn rdelay600">
+                                                    <p>④ 彭水</p>
+                                                    <p>-重庆市彭水苗族土家族自治县人民医院</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="con-bottom">
+                                        <h6>武汉明德生物科技股份有限公司版权所有</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="west">
+                        <div class="container">
+                            <div class="aninode bg-index">
+                                <div class="head-line">
+                                    <h3>
+                                        <span>渝西区溶栓取栓推荐单位</span>
+                                        <span class="title-date">2019年08月01日</span>
+                                    </h3>
+                                </div>
+                                <div class="content">
+                                    <div class="wrapper">
+                                        <div class="con-top">
+                                            <div class="con-top-left">
+                                                <div class="upper">
+                                                    <div class="main-eight leftIn ldelay400">
+                                                        <p>⑧ 潼南</p>
+                                                        <p>-重庆市潼南区人民医院</p>
+                                                        <p>-重庆市潼南区中医院</p>
+                                                    </div>
+                                                    <div class="main-nine leftIn ldelay600">
+                                                        <p>⑨ 大足</p>
+                                                        <p>-重庆市大足区人民医院</p>
+                                                        <p>-重庆市大足区中医院</p>
+                                                    </div>
+                                                    <div class="main-ten leftIn ldelay800">
+                                                        <p>⑩ 荣昌</p>
+                                                        <p>-重庆市荣昌区人民医院</p>
+                                                    </div>
+                                                    <div class="main-eleven leftIn ldelay1000">
+                                                        <p>⑪ 永川</p>
+                                                        <p>-重庆医科大学附属永川医院</p>
+                                                        <p>-重庆市永川区人民医院</p>
+                                                        <p>-重庆市永川区中医院</p>
+                                                    </div>
+                                                </div>
+                                                <div class="lower">
+                                                    <div class="map-bg">
+                                                        <img class="imgjump blink" src="./image/west/img_map_yuxi1@2x.png">
+                                                        <span class="main-title-text ">重庆市<br />渝西区</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 地图中间 做动画 -->
+                                            <div class="con-top-center">
+                                                <div class="mapmsgbg">
+                                                    <div class="moveflag-one rightIn">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>合川市</span>
+                                                    </div>
+                                                    <div class="moveflag-two rightIn rdelay200">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>铜梁县</span>
+                                                    </div>
+                                                    <div class="moveflag-three rightIn rdelay400">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>璧山县</span>
+                                                    </div>
+                                                    <div class="moveflag-four rightIn rdelay600">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>江津市</span>
+                                                    </div>
+                                                    <div class="moveflag-five rightIn rdelay800">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>綦江县</span>
+                                                    </div>
+                                                    <div class="moveflag-six rightIn rdelay1000">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>万盛区</span>
+                                                    </div>
+                                                    <div class="moveflag-seven rightIn rdelay1200">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>南川市</span>
+                                                    </div>
+                                                    <div class="moveflag-eight leftIn ldelay400">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>潼南县</span>
+                                                    </div>
+                                                    <div class="moveflag-nine leftIn ldelay600">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>大足县</span>
+                                                    </div>
+                                                    <div class="moveflag-ten leftIn ldelay800">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>荣昌</span>
+                                                    </div>
+                                                    <div class="moveflag-eleven leftIn ldelay1000">
+                                                        <img src="./image/index/icon_light@2x.png" />
+                                                        <span>永川市</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="con-top-right">
+                                                <div class="right-bg">
+                                                    <div class="main-one rightIn">
+                                                        <p>① 合川</p>
+                                                        <p>-重庆市合川区人民医院</p>
+                                                    </div>
+                                                    <div class="main-two rightIn rdelay200">
+                                                        <p>② 铜梁</p>
+                                                        <p>-重庆市铜梁区人民医院</p>
+                                                        <p>-重庆市铜梁区中医院</p>
+                                                    </div>
+                                                    <div class="main-three rightIn rdelay400">
+                                                        <p>③ 璧山</p>
+                                                        <p>-重庆市璧山区人民医院</p>
+                                                    </div>
+                                                    <div class="main-four rightIn rdelay600">
+                                                        <p>④ 江津</p>
+                                                        <p>-重庆市江津中心医院</p>
+                                                        <p>-重庆市江津区中医院</p>
+                                                    </div>
+                                                    <div class="main-five rightIn rdelay800">
+                                                        <p>⑤ 綦江</p>
+                                                        <p>-重庆市綦江区人民医院</p>
+                                                    </div>
+                                                    <div class="main-five rightIn rdelay1000">
+                                                        <p>⑥ 万盛</p>
+                                                        <p>-重庆市万盛经济技术开发区人民医院</p>
+                                                    </div>
+                                                    <div class="main-five rightIn rdelay1200">
+                                                        <p>⑦ 南川</p>
+                                                        <p>-重庆市南川区人民医院</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="con-bottom">
+                                            <h6>武汉明德生物科技股份有限公司版权所有</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        // backgroundColor: '#0E2A43',
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '10%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                        color: '#0050AB',
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#00F1FD'
+                    }
+                },
+                data: ["渝东北区", "渝东南区", "渝西区", "主城区"],
+            }, {
+                type: 'category',
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    show: false
+                },
+            },
+
+        ],
+        yAxis: {
+            show: false,
+        },
+        series: [{
+            type: 'bar',
+            xAxisIndex: 1,
+            itemStyle: {
+                normal: {
+                    show: true,
+                    color: '#006AB5',
+                    borderWidth: 0,
+                }
+            },
+            barWidth: '20%',
+            data: [30, 30, 30, 30]
+        },
+        {
+            type: 'bar',
+            barWidth: '20%',
+            itemStyle: {
+                normal: {
+                    show: true,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#00F0FF'
+                    }, {
+                        offset: 1,
+                        color: '#006AB5'
+                    }]),
+                    barBorderRadius: 50,
+                    borderWidth: 0,
+                }
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    textStyle: {
+                        fontSize: "0.16rem",
+                        color: "#00F1FD"
+                    }
+                }
+            },
+            barGap: '100%',
+            data: [14, 7, 16, 28]
+        }
+        ]
+
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+<script type="text/javascript" src="./js/index.js">
+</script>
+
+</html>

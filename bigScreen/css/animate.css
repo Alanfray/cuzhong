@@ -1,0 +1,113 @@
+/*动画样式*/
+.aninode {
+    visibility: hidden;
+}
+
+.animated .aninode {
+    visibility: visible;
+}
+.animated .rightIn {
+    /*animation: rightIn 2s ease;*/
+    animation-name: rightIn;
+    animation-duration: 2s;
+}
+
+.animated .leftIn {
+    animation-name: leftIn;
+    animation-duration: 2s;
+}
+
+@keyframes rightIn {
+    from {
+        transform: translateY(-1000px)
+    }
+
+    to {
+        transform: translateY(0px)
+    }
+}
+
+@keyframes leftIn {
+    from {
+        transform: translateY(-1000px)
+    }
+
+    to {
+        transform: translateY(0px)
+    }
+}
+
+.rdelay200 {
+    animation-delay: 2000ms;
+    animation-fill-mode: backwards !important;
+}
+
+.rdelay400 {
+    animation-delay: 4000ms;
+    animation-fill-mode: backwards !important;
+}
+
+.rdelay600 {
+    animation-delay: 6000ms;
+    animation-fill-mode: backwards !important;
+}
+
+.rdelay800 {
+    animation-delay: 8000ms;
+    animation-fill-mode: backwards !important;
+}
+
+.rdelay1000 {
+    animation-delay: 10000ms;
+    animation-fill-mode: backwards !important;
+}
+.rdelay1200{
+    animation-delay: 12000ms;
+    animation-fill-mode: backwards !important;
+}
+.ldelay200 {
+    animation-delay: 2000ms;
+    animation-fill-mode: backwards !important;
+}
+
+.ldelay400 {
+    animation-delay: 4000ms;
+    animation-fill-mode: backwards !important;
+}
+
+.ldelay600 {
+    animation-delay: 6000ms;
+    animation-fill-mode: backwards !important;
+}
+
+.ldelay800 {
+    animation-delay: 8000ms;
+    animation-fill-mode: backwards !important;
+}
+
+.ldelay1000 {
+    animation-delay: 10000ms;
+    animation-fill-mode: backwards !important;
+}
+
+/*闪烁动画*/
+@keyframes fade {
+    from { opacity: 1.0; }
+    25% { opacity: 0.4; }
+    50% { opacity: 0; }
+    75% {opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    25% { opacity: 0.4; }
+    50% { opacity: 0; }
+    75% {opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
