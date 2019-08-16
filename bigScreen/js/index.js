@@ -23,7 +23,7 @@ timer = setInterval(function () {
 },interval)
 
 
-//鼠标经过轮播图区域时，清除定时器，停止自动轮播
+/*//鼠标经过轮播图区域时，清除定时器，停止自动轮播
 slideBox.mouseenter(function () {
     clearInterval(timer);
 })
@@ -40,4 +40,4 @@ slideBox.mouseleave(function () {
             i = 0;
         }
     },interval)
-})
+})*/
